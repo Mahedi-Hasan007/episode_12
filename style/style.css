@@ -1,0 +1,87 @@
+:root{
+    --fixed-width:8.333333333333334;
+}
+
+.container{
+    width: 992px;
+    border: 1px solid red;
+    padding: 5px;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col-1{
+    width: calc(var(--fixed-width)*1%);
+    background-color: brown;
+    /*border: 1px solid red;*/
+    height: 100px;
+}
+.col-2{
+    width: calc(var(--fixed-width)*2%);
+    background-color: rgba(219, 39, 39, 0.87);
+    /*border: 1px solid red;*/
+    height: 100px;
+}
+.col-3{
+    width: calc(var(--fixed-width)*3%);
+    background-color: rgb(165, 112, 42);
+    /*border: 1px solid red;*/
+    height: 100px;
+}
+.col-4{
+    width: calc(var(--fixed-width)*4%);
+    background-color: rgb(165, 142, 42);
+    /*border: 1px solid red;*/
+    height: 100px;
+}
+.col-5{
+    width: calc(var(--fixed-width)*5%);
+    background-color: rgb(165, 157, 42);
+    /*border: 1px solid red;*/
+    height: 100px;
+}
+.col-6{
+    width: calc(var(--fixed-width)*6%);
+    background-color: rgb(147, 165, 42);
+    /*border: 1px solid red;*/
+    height: 100px;
+}
+.col-7{
+    width: calc(var(--fixed-width)*7%);
+    background-color: rgb(52, 165, 42);
+    /*border: 1px solid red;*/
+    height: 100px;
+}
+.col-8{
+    width: calc(var(--fixed-width)*8%);
+    background-color: rgb(42, 165, 69);
+    /*border: 1px solid red;*/
+    height: 100px;
+}
+.col-9{
+    width: calc(var(--fixed-width)*9%);
+    background-color: rgb(42, 165, 134);
+    /*border: 1px solid red;*/
+    height: 100px;
+}
+.col-10{
+    width: calc(var(--fixed-width)*10%);
+    background-color: rgb(42, 140, 165);
+    /*border: 1px solid red;*/
+    height: 100px;
+}
+.col-11{
+    width: calc(var(--fixed-width)*11%);
+    background-color: rgb(42, 110, 165);
+    /*border: 1px solid red;*/
+    height: 100px;
+}
+.col-12{
+    width: calc(var(--fixed-width)*12%);
+    background-color: rgb(165, 42, 159);
+    /*border: 1px solid red;*/
+    height: 100px;
+}

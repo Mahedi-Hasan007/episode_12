@@ -1,0 +1,100 @@
+:root{
+    --black : black;
+    --border: 1px solid red;
+    --hover_timing: all linear .3s;
+
+    --brand: rgb(122, 47, 47);
+    --paragraph: rgb(13, 16, 63);
+    --fix-width:300px;
+}
+
+body{
+    width: 992px;
+    margin: auto;
+}
+
+.box{
+    height: 400px;
+    width: calc(var(--fix-width)*1.5);
+    border: 1px solid var(--black);
+    transition-duration: .3s;*/
+    transition: var(--hover_timing);
+}
+
+.box:hover{
+    background: peru;
+}
+
+h3{
+    color: var(--brand);
+    transition: var(--hover_timing);
+}
+
+p{
+    color: var(--paragraph);
+    transition: var(--hover_timing);
+}
+
+.box:hover h3,
+.box:hover p{
+    color: white;
+}
+
+@media (min-width:300px) and (max-width:600px){
+    .box{
+        height: 200px;
+        background-color: yellow;
+    }
+}
+
+header{
+    background-color: aqua;
+    height: 120px;
+}
+
+section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+section div{
+    width: 33.3%;
+    height: 200px;
+    background-color: rgb(126, 73, 73);
+}
+
+section div:nth-child(2){
+    background-color: blue;
+}
+
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+footer div{
+    width: 33.3%;
+    height: 200px;
+    background-color: brown;
+}
+
+footer div:nth-child(2),
+footer div:nth-child(4){
+    background-color: blue;
+}
+
+@media (min-width:200px) and (max-width: 500px){
+    body{
+        width: 500px;
+    }
+
+    footer div{
+        width: calc(250px);
+        height: 200px;
+        background-color: antiquewhite;
+        margin-bottom: 30px;
+    }
+}
